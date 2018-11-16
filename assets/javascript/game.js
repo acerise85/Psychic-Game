@@ -44,17 +44,13 @@ var computerSelection = letters[Math.floor(Math.random() * letters.length)];
             
             document.getElementById("lettersChosen").innerHTML = lettersChosen.toString();
             document.getElementById('lose').innerHTML = lose;
-            
+            document.getElementById('guesses').innerHTML = guesses;
             console.log(computerSelection);
         }
 
         
     //if statment to subtract number of guesses on wrong answer and let user know they lost round
-        if (userGuess != computerSelection){
-
-            document.getElementById('guesses').innerHTML = guesses;
-
-        }
+        
             
            if (guesses === 0){
 
