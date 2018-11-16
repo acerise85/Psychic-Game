@@ -30,7 +30,7 @@ var computerSelection = letters[Math.floor(Math.random() * letters.length)];
             
     
             // location.reload();
-            computerSelection;
+            computerSelection = letters[Math.floor(Math.random() * letters.length)];
             guesses = 10;
             console.log(userGuess);
 
@@ -41,7 +41,7 @@ var computerSelection = letters[Math.floor(Math.random() * letters.length)];
             lettersChosen.push(userGuess);
             guesses--;
             console.log(lettersChosen);
-
+            
             document.getElementById("lettersChosen").innerHTML = lettersChosen.toString();
             document.getElementById('lose').innerHTML = lose;
             
@@ -50,17 +50,17 @@ var computerSelection = letters[Math.floor(Math.random() * letters.length)];
 
         
     //if statment to subtract number of guesses on wrong answer and let user know they lost round
-        // if (userGuess != computerSelection){
+        if (userGuess != computerSelection){
 
-        //     document.getElementById('guesses').innerHTML = guesses;
+            document.getElementById('guesses').innerHTML = guesses;
 
-        // }
+        }
             
            if (guesses === 0){
 
             lose++;
             
-            computerSelection;
+            computerSelection = letters[Math.floor(Math.random() * letters.length)];
             guesses = 10;
             // location.reload();
            }
