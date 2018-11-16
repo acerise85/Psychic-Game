@@ -4,7 +4,7 @@ var letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','
 var win = 0;
 var lose = 0;
 var guesses = 10;
-
+var lettersChosen = [];
 
 //random letter chooser for computerSelection, working correctly
 var computerSelection = letters[Math.floor(Math.random() * letters.length)];
@@ -19,7 +19,7 @@ var computerSelection = letters[Math.floor(Math.random() * letters.length)];
         var userGuess = start.key.toLocaleLowerCase();
 
     //aray to store guessed letters
-        var lettersChosen = [""];
+        
 
        
         //if statement to see if userGuess matches the computerSelection
@@ -27,16 +27,20 @@ var computerSelection = letters[Math.floor(Math.random() * letters.length)];
 
             win++;
             document.getElementById('win').innerHTML = win;
+            
     
-        
+            // location.reload();
+            computerSelection;
+            guesses = 10;
             console.log(userGuess);
+
         }
         //else statment for when userGuess does not match computerSelection the letters go to an array to display letters already chosen
         else {
 
-            lettersChosen.push([]);
-            
-            lose++;
+            lettersChosen.push(userGuess);
+            guesses--;
+            console.log(lettersChosen);
 
             document.getElementById("lettersChosen").innerHTML = lettersChosen.toString();
             document.getElementById('lose').innerHTML = lose;
@@ -46,17 +50,19 @@ var computerSelection = letters[Math.floor(Math.random() * letters.length)];
 
         
     //if statment to subtract number of guesses on wrong answer and let user know they lost round
-        if (userGuess != computerSelection){
+        // if (userGuess != computerSelection){
 
-            guesses--;
+        //     document.getElementById('guesses').innerHTML = guesses;
 
-            document.getElementById('guesses').innerHTML = guesses;
-
-        }
+        // }
             
            if (guesses === 0){
 
-             alert("Sorry, you lose. The correct letter was: " + computerSelection);
+            lose++;
+            
+            computerSelection;
+            guesses = 10;
+            // location.reload();
            }
 
     }
