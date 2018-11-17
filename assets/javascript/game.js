@@ -19,10 +19,12 @@ var computerSelection = letters[Math.floor(Math.random() * letters.length)];
         var userGuess = start.key.toLocaleLowerCase();
 
     //aray to store guessed letters
-        
+        for (var a = 0; a < letters.length; a++){
+            if (userGuess === letters[a]){
+                //Check
 
-       
-        //if statement to see if userGuess matches the computerSelection
+
+                 //if statement to see if userGuess matches the computerSelection
         if ( userGuess === computerSelection){
 
             win++;
@@ -62,6 +64,31 @@ var computerSelection = letters[Math.floor(Math.random() * letters.length)];
            }
 
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            }
+
+
+        }
+
+       
+       
 
 
 

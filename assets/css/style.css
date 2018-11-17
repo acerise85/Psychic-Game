@@ -2,9 +2,9 @@
 body{
 
     background-image: url("../images/space.jpg");
-    background: 0.3;
-    
+        
 }
+
 
 .main-container{
 
@@ -24,6 +24,8 @@ body{
     margin: 25%, 5%, 35%;
     opacity: 0.8;
     padding: 10px;
+    text-align: center;
+   
 
 }
 
@@ -41,6 +43,7 @@ color: indigo;
     margin: 5%;
     margin-right: 0px;
     float: left;
+   text-align: center;
 
 }
 
@@ -50,6 +53,8 @@ color: indigo;
     padding: 0%;
     float: left;
     width: 50%;
+    text-align: center;
+    overflow-wrap: break-word;
 }
 
 .img{
