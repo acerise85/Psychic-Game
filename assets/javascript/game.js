@@ -23,7 +23,7 @@ var computerSelection = letters[Math.floor(Math.random() * letters.length)];
             if (userGuess === letters[a]){
                 //Check
 
-
+                
                  //if statement to see if userGuess matches the computerSelection
         if ( userGuess === computerSelection){
 
@@ -37,6 +37,7 @@ var computerSelection = letters[Math.floor(Math.random() * letters.length)];
             console.log(userGuess);
 
         }
+       
         //else statment for when userGuess does not match computerSelection the letters go to an array to display letters already chosen
         else {
 
@@ -50,7 +51,7 @@ var computerSelection = letters[Math.floor(Math.random() * letters.length)];
             console.log(computerSelection);
         }
 
-        
+     
     //if statment to subtract number of guesses on wrong answer and let user know they lost round
         
             
@@ -60,26 +61,10 @@ var computerSelection = letters[Math.floor(Math.random() * letters.length)];
             
             computerSelection = letters[Math.floor(Math.random() * letters.length)];
             guesses = 10;
-            // location.reload();
+            
            }
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
             }
