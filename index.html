@@ -12,24 +12,24 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+    
 </head>
 <body class="main-container">
-    
-       
-    
+    <!---starts game with key push-->
         <h1 onkeyup="start()">Guess what letter I'm thinking of</h1>
     
-    
+    <!---score and letter choice container-->
     <section class="guessContainer">
         <div  class="row">
             <div class="col-sm-6">
             <div class="score">
+                <!--scores-->
                 <h2> Wins: <a id = "win"></a></h2>
                 <h2> Losses: <a id = "lose"></a></h2>
                 <h2> Guesses Left: <a id = "guesses"></a></h2>
             </div>
         </div>
+        <!--Letters chosen-->
         <div class="lettersGuessed">
             <div class="col-sm-6">
                 <h2> Letters Chosen: <a id = "lettersChosen"></a></h2>
@@ -37,6 +37,7 @@
         </div>
     </div>
     </section>
+    <!--Image at bottom of page-->
     <section class="img">
     <img src="assets/images/psychic.jpg" class="rounded mx-auto d-block" alt="...">
 </section>
